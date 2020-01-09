@@ -1,27 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MaterialModule } from './material'
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
+import { BodyComponent } from './body/body.component';
+import { CardButtonComponent } from './components/card-button/card-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    BodyComponent,
+    CardButtonComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,    
-    MatInputModule, 
-    MatButtonModule,
-    MatSelectModule,
-    MatIconModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
