@@ -1,0 +1,26 @@
+#category {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+  }
+
+#search{
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+.search-form{
+    padding-left: 35%;
+    padding-right: 35%;
+
+}
+
+mat-form-field{
+    display: contents;
+    
+}
+
+app-card-button{
+    padding: 5%;
+}

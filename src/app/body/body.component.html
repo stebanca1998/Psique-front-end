@@ -1,4 +1,32 @@
-<p>body works!</p>
+<div>
+    <div id="search">
 
+        <form class="search-form">
+            <mat-form-field>
+                <mat-icon matPrefix>search</mat-icon>
+                <input type="search" matInput placeholder="Buscar Prueba">
+            </mat-form-field>
+        </form>
+    </div>
+        
+    <div id="category">
+    
+        <app-card-button name="Pruebas de atencion"
+        source="attentionTest"></app-card-button>
+        
+        <app-card-button name="Pruebas cognitivas"
+        source="cognitiveTest"></app-card-button>
 
-<app-card-button></app-card-button>
+        <app-card-button name="Pruebas de inteligencia"
+        source="intelligenceTests"></app-card-button>
+
+        <app-card-button name="Pruebas de aprendizaje"
+        source="learningTests"></app-card-button>
+
+        <app-card-button name="Pruebas de memoria"
+        source="memoryTest"></app-card-button>
+
+        <app-card-button name="Pruebas de quirofano"
+        source="quirofanoTests"></app-card-button>
+    </div>
+</div>
