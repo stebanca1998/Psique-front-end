@@ -1,5 +1,7 @@
 <div>
     <div id="search">
+        <mat-icon  *ngIf="state!=='category'" 
+        (click)="changeState('category')" >keyboard_backspace</mat-icon>
 
         <form class="search-form">
             <mat-form-field>
@@ -8,25 +10,18 @@
             </mat-form-field>
         </form>
     </div>
-        
-    <div id="category">
     
-        <app-card-button name="Pruebas de atencion"
-        source="attentionTest"></app-card-button>
-        
-        <app-card-button name="Pruebas cognitivas"
-        source="cognitiveTest"></app-card-button>
-
-        <app-card-button name="Pruebas de inteligencia"
-        source="intelligenceTests"></app-card-button>
-
-        <app-card-button name="Pruebas de aprendizaje"
-        source="learningTests"></app-card-button>
-
-        <app-card-button name="Pruebas de memoria"
-        source="memoryTest"></app-card-button>
-
-        <app-card-button name="Pruebas de quirofano"
-        source="quirofanoTests"></app-card-button>
+    <div *ngIf="state==='category'" >
+        <app-category 
+        [names]="names" [sources]="sources"
+        (messageEvent)="changeState($event)"
+        ></app-category>
     </div>
-</div>
+
+    <div  *ngIf="state!=='category'" >
+        <app-category [sources]="[]"
+        [names]="names" 
+        ></app-category>
+    </div>
+
+</div> 

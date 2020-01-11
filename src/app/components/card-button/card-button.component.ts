@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-card-button',
@@ -15,10 +15,17 @@ export class CardButtonComponent implements OnInit {
 
   color:string = "#017F8D"
 
+  @Output() messageEvent = new EventEmitter<string>()
+
+
+
   constructor() { }
 
   ngOnInit() {
     this.path= "../../../assets/CardLogos/"+this.source+".png"
   }
 
+  trigger(){
+    this.messageEvent.emit(this.name)
+  }
 }

@@ -1,18 +1,18 @@
-#category {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-
-  }
 
 #search{
     padding-top: 3%;
     padding-bottom: 3%;
+    display: flex
 
 }
 
+.mat-icon {
+    font-size: 300%;
+  }
+
 .search-form{
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 40%;
+    padding-right: 30%;
 
 }
 
@@ -21,6 +21,3 @@ mat-form-field{
     
 }
 
-app-card-button{
-    padding: 5%;
-}
