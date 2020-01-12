@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { CardButtonComponent } from './components/card-button/card-button.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     HeaderComponent,
     BodyComponent,
     CardButtonComponent,
-    SidebarComponent
+    SidebarComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
