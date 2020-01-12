@@ -1,7 +1,8 @@
-import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule,} from '@angular/material';
 import {MatRippleModule} from '@angular/material/core';
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
 
 import {NgModule} from '@angular/core'
 
@@ -11,14 +12,20 @@ import {NgModule} from '@angular/core'
         MatRippleModule,
         MatSelectModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        MatSidenavModule,
+        MatListModule,
+        MatMenuModule
     ],
     exports:[
         MatInputModule,
         MatRippleModule,
         MatSelectModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        MatSidenavModule,
+        MatListModule,
+        MatMenuModule
     ]
 })
 
